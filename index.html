@@ -11,8 +11,85 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Income & Expense Calculator</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-gray-100 min-h-screen p-4">
+    <div class="max-w-xl mx-auto bg-white rounded shadow p-6">
+      <h1 class="text-2xl font-bold text-center mb-4">
+        Income Expense Calculator
+      </h1>
+
+      <!-- Totals -->
+      <div class="flex justify-between mb-6">
+        <div>
+          Total Income:
+          <span id="total-income" class="text-green-600 font-bold">$0</span>
+        </div>
+        <div>
+          Total Expense:
+          <span id="total-expense" class="text-red-600 font-bold">$0</span>
+        </div>
+        <div>
+          Balance: <span id="balance" class="text-blue-600 font-bold">$0</span>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="entry-form" class="mb-6">
+        <div class="flex flex-col gap-4">
+          <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            class="border p-2 rounded"
+            required
+          />
+          <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+            class="border p-2 rounded"
+            required
+          />
+
+          <select id="type" class="border p-2 rounded" required>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+
+          <div class="flex gap-4">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Add
+            </button>
+            <button
+              type="reset"
+              id="reset-btn"
+              class="bg-gray-300 px-4 py-2 rounded"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Filters -->
+      <div class="flex gap-4 mb-4">
+        <label
+          ><input type="radio" name="filter" value="all" checked /> All</label
+        >
+        <label
+          ><input type="radio" name="filter" value="income" /> Income</label
+        >
+        <label
+          ><input type="radio" name="filter" value="expense" /> Expense</label
+        >
+      </div>
+
+      <!-- Entries List -->
+      <ul id="entries" class="space-y-2"></ul>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
