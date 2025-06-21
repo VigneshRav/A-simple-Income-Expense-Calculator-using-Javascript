@@ -50,22 +50,22 @@
             required
           />
 
-          <select id="type" class="border p-2 rounded" required>
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
+          <select id="type" class="border p-2 rounded cursor-pointer" required>
+            <option class="cursor-pointer" value="income">Income</option>
+            <option class="cursor-pointer" value="expense">Expense</option>
           </select>
 
           <div class="flex gap-4">
             <button
               type="submit"
-              class="bg-blue-500 text-white px-4 py-2 rounded"
+              class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
             >
               Add
             </button>
             <button
               type="reset"
               id="reset-btn"
-              class="bg-gray-300 px-4 py-2 rounded"
+              class="bg-gray-300 px-4 py-2 rounded cursor-pointer"
             >
               Reset
             </button>
@@ -76,13 +76,32 @@
       <!-- Filters -->
       <div class="flex gap-4 mb-4">
         <label
-          ><input type="radio" name="filter" value="all" checked /> All</label
+          ><input
+            class="cursor-pointer"
+            type="radio"
+            name="filter"
+            value="all"
+            checked
+          />
+          All</label
         >
         <label
-          ><input type="radio" name="filter" value="income" /> Income</label
+          ><input
+            class="cursor-pointer"
+            type="radio"
+            name="filter"
+            value="income"
+          />
+          Income</label
         >
         <label
-          ><input type="radio" name="filter" value="expense" /> Expense</label
+          ><input
+            class="cursor-pointer"
+            type="radio"
+            name="filter"
+            value="expense"
+          />
+          Expense</label
         >
       </div>
 
