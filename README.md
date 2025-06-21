@@ -9,7 +9,7 @@ A responsive and simple web application to track income and expenses.
 ✅ Delete unwanted entries  
 ✅ Filter entries by `All`, `Income`, or `Expense`  
 ✅ View **Total Income**, **Total Expense**, and **Net Balance**  
-✅ Reset input fields using the clear button  
+✅ Reset input fields using the reset button  
 ✅ Persistent data using `localStorage`  
 ✅ Responsive layout for mobile and desktop  
 ✅ Built with clean, modular JavaScript and TailwindCSS
@@ -58,9 +58,9 @@ The application fulfills the following core functionalities:
 
 ➕ Add Entry:-
 
-- Enter description, amount, and select income/expense
+- Enter description, amount, and select income/expense.
 
-- Click Add — the entry is added to the list and stored in localStorage
+- Click Add — the entry is added to the list and stored in localStorage.
 
 
 
@@ -76,13 +76,13 @@ The application fulfills the following core functionalities:
 
 ❌ Delete Entry:-
 
-- Click Delete to remove an entry from the list and localStorage
+- Click Delete to remove an entry from the list and localStorage.
 
 
 
 🔍 Filter Entries:-
 
-Use radio buttons to filter:
+   Use radio buttons to filter:
 
 - All: shows all
 
@@ -94,7 +94,7 @@ Use radio buttons to filter:
 
 🧮 Summary Totals:-
 
-Top section shows:
+   Top section shows:
 
 - Total Income
 
@@ -106,17 +106,17 @@ Top section shows:
 
 🧹 Reset Button:-
 
-- Clears all input fields for a fresh entry
+- Clears all input fields for a fresh entry.
 
 
 
 📱 Responsive Design:-
 
-The app layout is fully responsive using TailwindCSS:
+   The app layout is fully responsive using TailwindCSS:
 
-- 📱 Mobile: Inputs and lists stack vertically
+- 📱 Mobile: Inputs and lists stack vertically.
 
-- 💻 Desktop: Form and entries arranged efficiently
+- 💻 Desktop: Form and entries arranged efficiently.
 
 ---
 
